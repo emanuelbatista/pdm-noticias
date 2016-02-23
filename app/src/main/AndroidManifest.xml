@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.edu.ifpb.pdm.noticias">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="Notícias">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".vision.AddNoticia"
+            android:configChanges="orientation"
+            android:label="@string/add_noticias" />
+        <activity
+            android:name=".vision.NoticiasActivity"
+            android:configChanges="orientation"
+            android:label="Noticias" />
+        <activity
+            android:name=".vision.NoticiaActivity"
+            android:label="Noticia"
+            />
+        <activity
+            android:label="Comentário"
+            android:name=".vision.ComentariosActivity">
+
+        </activity>
+    </application>
+
+</manifest>

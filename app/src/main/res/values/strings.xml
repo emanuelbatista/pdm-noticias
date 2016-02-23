@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">pdm-noticias</string>
+    <string name="categoria">Categorias</string>
+    <string name="add_noticias">Adicionar Noticia</string>
+    <string-array name="noticia_categoria">
+        <item></item>
+    </string-array>
+</resources>

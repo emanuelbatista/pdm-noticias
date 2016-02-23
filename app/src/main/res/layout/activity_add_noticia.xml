@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/add_noticia_margin"
+                android:text="Imagem"
+                android:inputType="text"
+                android:layout_gravity="center_horizontal"
+               />
+
+            <ImageButton
+                android:layout_height="40pt"
+                android:layout_width="40pt"
+                android:id="@+id/image_button"
+                android:layout_gravity="center_horizontal"
+                android:onClick="addImage"
+                android:contentDescription="sds" />
+
+            <EditText
+                android:layout_marginTop="@dimen/add_noticia_margin"
+                android:id="@+id/tituloView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:hint="Titulo da Noticia"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/noticiaView"
+                android:layout_height="150dp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/add_noticia_margin"
+                android:hint="Escreva a Noticia"
+                android:gravity="left|top"
+                android:inputType="textMultiLine"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Categoria"
+                android:textSize="@dimen/text_form_size"
+                android:layout_marginLeft="@dimen/text_form_margin_left"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/add_noticia_margin"/>
+            <Spinner
+                android:id="@+id/categoria"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+          <FrameLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <Button
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/add_noticia_margin"
+                  android:layout_marginBottom="@dimen/add_noticia_margin"
+                  android:layout_marginLeft="@dimen/activity_vertical_margin"
+                  android:layout_marginRight="@dimen/activity_vertical_margin"
+                  android:onClick="addNoticiaClick"
+                  android:text="Adicionar"
+                  android:layout_gravity="center"/>
+          </FrameLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

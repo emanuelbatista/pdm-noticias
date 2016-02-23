@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/corFundo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            tools:context=".MainActivity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/categoria"
+                    android:textColor="@color/corTexto"
+                    android:textSize="10pt" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:onClick="clickAddNoticia"
+                    android:background="#ffffff"
+                    android:padding="6dp"
+                    android:text="@string/add_noticias"
+                    android:textSize="13dp" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:shrinkColumns="*"
+                    android:stretchColumns="*">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/btnEsporte"
+                            android:layout_width="@dimen/categoria_card_width_sm"
+                            android:layout_height="@dimen/categoria_card_height_sm"
+                            android:layout_column="0"
+                            android:layout_margin="@dimen/categoria_card_margin_sm"
+                            android:background="@drawable/esporte"
+                            android:onClick="clickEsporteNoticia"
+                            android:shadowColor="@color/corTexto"
+                            android:shadowDx="@integer/categoriaShadowDx"
+                            android:shadowDy="@integer/categoriaShadowDy"
+                            android:shadowRadius="@integer/categoriaRadius"
+                            android:text="Esporte"
+                            android:textColor="@color/branco"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:layout_width="@dimen/categoria_card_width_sm"
+                            android:layout_height="@dimen/categoria_card_height_sm"
+                            android:layout_column="1"
+                            android:onClick="clickEconomiaNoticia"
+                            android:layout_margin="@dimen/categoria_card_margin_sm"
+                            android:background="@drawable/economia"
+                            android:shadowColor="@color/corTexto"
+                            android:shadowDx="@integer/categoriaShadowDx"
+                            android:shadowDy="@integer/categoriaShadowDy"
+                            android:shadowRadius="@integer/categoriaRadius"
+                            android:text="Economia"
+                            android:textColor="@color/branco"
+                            android:textStyle="bold" />
+
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <Button
+                            android:layout_width="@dimen/categoria_card_width_sm"
+                            android:layout_height="@dimen/categoria_card_height_sm"
+                            android:layout_column="0"
+                            android:layout_margin="@dimen/categoria_card_margin_sm"
+                            android:layout_span="2"
+                            android:background="@drawable/cienciatecnologia"
+                            android:shadowColor="@color/corTexto"
+                            android:onClick="clickCienciaTecnologiaNoticia"
+                            android:shadowDx="@integer/categoriaShadowDx"
+                            android:shadowDy="@integer/categoriaShadowDy"
+                            android:shadowRadius="@integer/categoriaRadius"
+                            android:text="Ciências e Tecnologias"
+                            android:textColor="@color/branco"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <Button
+                            android:layout_width="@dimen/categoria_card_width_sm"
+                            android:layout_height="@dimen/categoria_card_height_sm"
+                            android:layout_column="0"
+                            android:layout_margin="@dimen/categoria_card_margin_sm"
+                            android:layout_weight="1"
+                            android:onClick="clickPoliticaNoticia"
+                            android:background="@drawable/politica"
+                            android:gravity="center"
+                            android:shadowColor="@color/corTexto"
+                            android:shadowDx="@integer/categoriaShadowDx"
+                            android:shadowDy="@integer/categoriaShadowDy"
+                            android:shadowRadius="@integer/categoriaRadius"
+                            android:text="Política"
+                            android:textColor="@color/branco"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:layout_width="@dimen/categoria_card_width_sm"
+                            android:layout_height="@dimen/categoria_card_height_sm"
+                            android:layout_column="0"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/categoria_card_margin_sm"
+                            android:layout_weight="1"
+                            android:onClick="clickConcurdoEmpregoNoticia"
+                            android:background="@drawable/concursoemprego"
+                            android:gravity="center"
+                            android:shadowColor="@color/corTexto"
+                            android:shadowDx="@integer/categoriaShadowDx"
+                            android:shadowDy="@integer/categoriaShadowDy"
+                            android:shadowRadius="@integer/categoriaRadius"
+                            android:text="Concurso e Emprego"
+                            android:textColor="@color/branco"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                </TableLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+
+
